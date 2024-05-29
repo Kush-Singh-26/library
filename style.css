@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    background-color: lightcyan;
+    padding: 25px;
+    color: darksalmon;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+body {
+    background-color: #ded7ec;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+.addBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darksalmon;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    padding: 5px;
+    padding-right: 10px;
+    border-radius: 12px;
+}
+
+.addBtn-hide{
+    display: none;
+}
+.addBtn:hover {
+    padding: 8px;
+}
+.plus {
+    height: 40px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 8px solid mediumpurple;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px; /* Fixed width for form */
+    height: 350px;
+    border-radius: 12px;
+    background-color: lightblue;
+}
+.text-input {
+    width: 50%;
+    border-radius: 12px;
+    border: 1px solid;
+    background-color: rosybrown;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 0;
+}
+
+.text-input:focus{
+    outline: 3px solid palevioletred;
+}
+.read {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#read {
+    height: 20px;
+    width: 20px;
+}
+label {
+    font-size: 20px;
+}
+.popup {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    margin: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 1000;
+}
+.popup-show {
+    display: flex; /* Ensure it's flex to use justify-content and align-items */
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    z-index: 1000;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.submit {
+    background-color: salmon;
+    border-radius: 12px;
+    border: 0;
+    height: 30px;
+    width: 45%;
+}
+
+.close{
+    background-color: salmon;
+    border-radius: 12px;
+    border: 0;
+    height: 30px;
+    width: 45%;
+}
+
+.close:hover{
+    background-color:lightsalmon;
+}
