@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="shortcut icon" href="./images/bookshelf.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -26,14 +27,14 @@
     </header>
     <main>
         <div class="popup" id="popup">
-            <form action="script.js" method="post" id="form">
+            <form method="post" id="form">
                 <h1>Add a book</h1>
-                <label for="author">* Author's Name</label>
-                <input class="text-input" type="text" name="author" id="author">
                 <label for="title">* Title of book</label>
-                <input class="text-input" type="text" name="title" id="title">
+                <input class="text-input" type="text" name="title" id="title" required>
+                <label for="author">* Author's Name</label>
+                <input class="text-input" type="text" name="author" id="author" required>
                 <label for="pages">* No. of pages</label>
-                <input class="text-input" type="number" name="pages" id="pages">
+                <input class="text-input" type="number" name="pages" id="pages" required>
                 <div class="read">
                     <label for="read">Have you read the book</label>
                     <input class="check-input" type="checkbox" name="read" id="read">
@@ -43,6 +44,9 @@
                     <button class="submit" type="submit">ADD BOOK</button>
                 </div>
             </form>
+        </div>
+
+        <div class="book-container">
         </div>
     </main>
     <footer></footer>
